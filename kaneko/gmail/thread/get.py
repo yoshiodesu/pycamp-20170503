@@ -6,6 +6,22 @@ from oauth2client import client
 from oauth2client import tools
 from oauth2client.file import Storage
 
+
+__author__ == 'Junya Kaneko <junya@mpsamurai.org>'
+
+
+"""Problem:
+
+Your customer is a company's support center.
+
+The customer want you to develop a system that sorts their emails on gmail according to those urgency.
+
+So, you decide to make a words dictionary by using their emails for further analyses.
+
+Refactor this code so that it can download their all (or at least some) emails from gmail.
+"""
+
+
 SCOPES = 'https://www.googleapis.com/auth/gmail.readonly'
 CLIENT_SECRET_FILE = 'secrets/junya.json'
 APPLICATION_NAME = 'pycamp-20170503'
